@@ -2,8 +2,8 @@
 <LinearLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,28 +14,21 @@
     <!-- we are, here, write the number of the dice -->
     <TextView
         android:id="@+id/textViewDiceNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/appAlignment"
         android:text=""
-        android:layout_gravity="center"
         android:textSize="80sp"
         android:textStyle="bold" />
 
     <!-- image of the dice -->
     <ImageView
         android:id="@+id/imageViewDice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/empty_dice"
-        />
+        style="@style/appAlignment"
+        app:srcCompat="@drawable/empty_dice" />
 
     <!-- when we click the button, the dice value will change -->
     <Button
         android:id="@+id/btRollDice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        style="@style/appAlignment"
         android:text="@string/bt_text"
         android:textSize="18sp" />
 
